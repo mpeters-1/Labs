@@ -14,3 +14,10 @@ ORDER ||--|{ TITLE : contains
 ORDER {
     string book_titles
     int quantity}
+COLLECTION ||--|{ TITLE : contains
+COLLECTION {
+    string book_titles
+    string genre
+    string media_types
+    string copies_available
+}}
