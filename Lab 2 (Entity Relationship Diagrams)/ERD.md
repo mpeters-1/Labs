@@ -2,7 +2,7 @@
 erDiagram
 TITLE {
     string book_title The_Catcher_in_the_Rye
-    string ISBN PK S9780316769488
+    int ISBN PK 9780316769488
     string genre Adult_Fiction
     string author JD_Salinger
     string media_type eBook
