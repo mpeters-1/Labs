@@ -1,29 +1,29 @@
 ```mermaid
 erDiagram
 TITLE {
-    string book_title The_Catcher_in_the_Rye
+    string book_title
     string ISBN PK
-    string genre Adult_Fiction
-    string author JD_Salinger
-    string media_type eBook
-    int copy 2
+    string genre
+    string author
+    string media_type
+    int copy
 }
 PATRON ||--|{ ORDER : checks_out
 PATRON {
-    string name John_Doe
+    string name
     string librarycardNumber PK
 }
 ORDER ||--|{ TITLE : contains
 ORDER {
-    string book_title FK The_Catcher_in_the_Rye
-    int number_of_items 1}
+    string book_title FK
+    int number_of_items}
 COLLECTION ||--|{ TITLE : holds
 COLLECTION {
-    string book_titles FK 
+    string book_titles FK
     string genre FK
     string media_types FK
     int copies_available FK
 }
 ```
 
-This is a note
+This is a note.
