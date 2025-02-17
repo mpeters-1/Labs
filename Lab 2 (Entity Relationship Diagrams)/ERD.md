@@ -2,7 +2,7 @@
 erDiagram
 TITLE {
     string book_title The_Catcher_in_the_Rye
-    int ISBN PK 9780316769488
+    string ISBN 9780316769488 PK
     string genre Adult_Fiction
     string author JD_Salinger
     string media_type eBook
@@ -11,7 +11,7 @@ TITLE {
 PATRON ||--|{ ORDER : checks_out
 PATRON {
     string name John_Doe
-    string librarycardNumber PK 000123456
+    string librarycardNumber 000123456 PK
 }
 ORDER ||--|{ TITLE : contains
 ORDER {
