@@ -5,7 +5,8 @@ TITLE {
     string ISBN
     string genre
     string author
-    int copies
+    string media_type
+    int copy
 }
 PATRON ||--|{ ORDER : checks_out
 PATRON {
@@ -15,10 +16,10 @@ PATRON {
 ORDER ||--|{ TITLE : contains
 ORDER {
     string book_titles
-    int quantity}
+    int number_of_items}
 COLLECTION ||--|{ TITLE : holds
 COLLECTION {
-    string book_titles
+    string all_titles
     string genre
     string media_types
     int copies_available
