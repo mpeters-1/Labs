@@ -13,7 +13,7 @@ PATRON {
 ORDER ||--|{ TITLE : contains
 ORDER {
     string book_titles
-    int quantity
+    int quantity}
 COLLECTION ||--|{ TITLE : contains
 COLLECTION {
     string book_titles
