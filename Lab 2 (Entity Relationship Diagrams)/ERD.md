@@ -6,7 +6,7 @@ erDiagram
     CUSTOMER {
        string name
        int librarycardnumber
-    }
+}
 }
     SALE ||--|{ PRODUCT : contains
     SALE {
