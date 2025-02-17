@@ -9,5 +9,8 @@ PATRON ||--|{ ORDER : checks_out
 PATRON {
     string name
     string librarycardNumber
-    string address
-}}
+}
+ORDER ||--|{ TITLE : contains
+ORDER {
+    string book_titles
+    int quantity}
