@@ -10,7 +10,7 @@ TITLE {
 }
 PATRON ||--|{ ORDER : checks_out
 PATRON {
-    string name
+    string name John_Doe
     string librarycardNumber PK
 }
 ORDER ||--|{ TITLE : contains
