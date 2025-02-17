@@ -13,8 +13,8 @@ PATRON {
     string name
     string librarycardNumber PK
 }
-ORDER ||--|{ TITLE : contains
-ORDER {
+LOANS ||--|{ TITLE : contains
+LOANS {
     string book_title FK
     int number_of_items}
 COLLECTION ||--|{ TITLE : holds
