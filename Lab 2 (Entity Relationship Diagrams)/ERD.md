@@ -8,7 +8,7 @@ TITLE {
     string media_type
     int copy
 }
-PATRON ||--|{ ORDER : checks_out
+PATRON ||--|{ LOANS : checks_out
 PATRON {
     string name
     string librarycardNumber PK
