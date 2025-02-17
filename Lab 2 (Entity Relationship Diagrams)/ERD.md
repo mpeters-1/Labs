@@ -25,4 +25,4 @@ COLLECTION {
     int copies_available FK
 }
 
-Comment
+Here is some more information
