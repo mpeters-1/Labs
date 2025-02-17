@@ -1,8 +1,8 @@
 ```mermaid
 erDiagram
-    PRODUCT {Books
+    PRODUCT {
 }
-    CUSTOMER ||--o{ SALE : checks out
+    CUSTOMER ||--o{ SALE : places
     CUSTOMER {
        string name
        int librarycardnumber
