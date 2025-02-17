@@ -23,4 +23,5 @@ COLLECTION {
     string genre
     string media_types
     int copies_available
+    fill: yellow
 }
