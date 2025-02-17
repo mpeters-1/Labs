@@ -24,5 +24,4 @@ COLLECTION {
     string media_types FK
     int copies_available FK
 }
-
 note bottom of COLLECTION: Notes
