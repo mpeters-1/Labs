@@ -14,7 +14,7 @@ ORDER ||--|{ TITLE : contains
 ORDER {
     string book_titles
     int quantity}
-COLLECTION ||--|{ TITLE : contains
+COLLECTION ||--|{ TITLE : holds
 COLLECTION {
     string book_titles
     string genre
