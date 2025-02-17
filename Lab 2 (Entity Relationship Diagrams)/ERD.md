@@ -1,18 +1,13 @@
 ```mermaid
 erDiagram
-    PRODUCT {
+TITLE {
+    string book_title
+    string ISBN
+    string genre
 }
-    CUSTOMER ||--o{ SALE : places
-    CUSTOMER {
-       string name
-       int librarycardnumber
-}
-}
-    SALE ||--|{ PRODUCT : contains
-    SALE {
-        string bookTitle
-        string ISBN
-    }
-    }
-    INVENTORY {Media Collection
-    }
+PATRON ||--|{ ORDER : checks_out
+PATRON {
+    string name
+    string librarycardNumber
+    string address
+}}
