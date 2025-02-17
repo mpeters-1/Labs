@@ -1,17 +1,17 @@
 ```mermaid
 erDiagram
 TITLE {
-    string book_title
-    string ISBN PK
-    string genre
-    string author
-    string media_type
-    int copy
+    string Catcher_in_the_Rye
+    string 9780316769488 PK
+    string youngadult_fiction
+    string JD_salinger
+    string eBook
+    int 1_of_12
 }
 PATRON ||--|{ ORDER : checks_out
 PATRON {
-    string name
-    string librarycardNumber PK
+    string John_Doe
+    string 000123456 PK
 }
 ORDER ||--|{ TITLE : contains
 ORDER {
