@@ -2,7 +2,7 @@
 erDiagram
 TITLE {
     string book_title
-    string ISBN
+    string ISBN PK
     string genre
     string author
     string media_type
@@ -11,17 +11,18 @@ TITLE {
 PATRON ||--|{ ORDER : checks_out
 PATRON {
     string name
-    string librarycardNumber
+    string librarycardNumber PK
 }
 ORDER ||--|{ TITLE : contains
 ORDER {
-    string book_titles
+    string book_title FK
     int number_of_items}
 COLLECTION ||--|{ TITLE : holds
 COLLECTION {
-    string all_titles
-    string genre
-    string media_types
-    int copies_available
-    fill: yellow
+    string book_titles FK
+    string genre FK
+    string media_types FK
+    int copies_available FK
 }
+
+Notes
