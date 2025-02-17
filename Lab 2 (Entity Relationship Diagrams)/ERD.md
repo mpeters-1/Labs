@@ -25,4 +25,4 @@ COLLECTION {
     int copies_available FK
 }
 
-Note bottom
+note bottom of COLLECTION: Notes
