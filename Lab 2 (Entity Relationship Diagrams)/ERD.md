@@ -4,7 +4,7 @@ TITLE {
     string book_title
     string ISBN PK
     string genre
-    string author JD_Salinger
+    string author
     string media_type
     int copy
 }
