@@ -24,5 +24,6 @@ COLLECTION {
     string media_types FK
     int copies_available FK
 }
+```
 
-%%Here is some more information
+This is a note
