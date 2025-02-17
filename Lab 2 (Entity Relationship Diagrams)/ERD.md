@@ -20,4 +20,4 @@ COLLECTION {
     string genre
     string media_types
     string copies_available
-}}
+}
