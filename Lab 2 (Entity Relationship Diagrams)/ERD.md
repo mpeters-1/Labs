@@ -4,6 +4,8 @@ TITLE {
     string book_title
     string ISBN
     string genre
+    string author
+    int copies
 }
 PATRON ||--|{ ORDER : checks_out
 PATRON {
@@ -19,5 +21,5 @@ COLLECTION {
     string book_titles
     string genre
     string media_types
-    string copies_available
+    int copies_available
 }
